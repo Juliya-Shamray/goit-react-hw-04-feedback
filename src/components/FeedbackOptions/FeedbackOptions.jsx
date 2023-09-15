@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-export const FeedbackOptions = ({ handleBtnClick, arrForMarkup }) => {
+export const FeedbackOptions = ({ handleBtnClick }) => {
+  const arrForMarkup = ['good', 'neutral', 'bad'];
   return (
     <ul
       style={{ display: 'flex', listStyle: 'none', gap: '10px', padding: '0' }}
@@ -28,5 +29,4 @@ export const FeedbackOptions = ({ handleBtnClick, arrForMarkup }) => {
 
 FeedbackOptions.propTypes = {
   handleBtnClick: PropTypes.func,
-  arrForMarkup: PropTypes.arrayOf(PropTypes.string),
 };
